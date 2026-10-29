@@ -166,7 +166,7 @@ class CryptoApp:
     def start_fetch_thread(self):
         if self.is_loading:
             return
-        self.is_loading = True1
+        self.is_loading = True
         self.update_btn.config(state="disabled", text="Загрузка...")
         thread = threading.Thread(target=self.fetch_data, daemon=True)
         thread.start()
